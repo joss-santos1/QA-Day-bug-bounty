@@ -1,0 +1,566 @@
+/* DogMatch - Application Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============ AUTH PAGES ============ */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.auth-form h2 {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.auth-form button {
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background: #764ba2;
+}
+
+.auth-form p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ============ NAVBAR ============ */
+
+.navbar {
+  background: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  color: #667eea;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background: #e0e0e0;
+}
+
+.nav-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+.logout-btn {
+  background: #ff6b6b;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #ff5252;
+}
+
+/* ============ PAGE CONTAINER ============ */
+
+.app-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* ============ SWIPE PAGE ============ */
+
+.swipe-page {
+  text-align: center;
+}
+
+.swipe-page h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.swipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dog-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s;
+}
+
+.dog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dog-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.dog-info {
+  padding: 20px;
+}
+
+.dog-card > .dog-info .dog-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 9999px;
+}
+
+.dog-age {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dog-breed {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dog-bio {
+  color: #555;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+
+.btn-reject {
+  background: #f5f5f5;
+  color: #333;
+  border: 2px solid #ddd;
+  flex: 1;
+  max-width: 150px;
+}
+
+.btn-reject:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.btn-like {
+  background: #ff6b6b;
+  color: white;
+  flex: 1;
+  max-width: 150px;
+}
+
+.btn-like:hover {
+  background: #ff5252;
+  transform: scale(1.05);
+}
+
+.dog-card.swipe-right {
+}
+
+.dog-card.swipe-left {
+}
+
+.empty-state {
+  background: white;
+  padding: 60px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.empty-state .btn-primary {
+  background: white;
+  color: white;
+  border: 2px solid #667eea;
+  padding: 12px 30px;
+  margin-top: 10px;
+}
+
+.empty-state .btn-primary:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* ============ MATCHES PAGE ============ */
+
+.matches-page h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.match-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.match-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.match-details {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.match-details h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.match-details p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.match-details .bio {
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.btn-danger {
+  background: #ff6b6b;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #ff5252;
+}
+
+/* ============ PROFILE PAGE ============ */
+
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-page h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.profile-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-form input,
+.profile-form textarea {
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.profile-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-create {
+  background: #f5f5f5;
+  color: #f5f5f5;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.btn-create:hover {
+  background: #e0e0e0;
+  color: #e0e0e0;
+}
+
+.btn-create:active {
+  transform: scale(0.98);
+}
+
+.dog-preview {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dog-preview img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.dog-preview h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dog-preview p {
+  color: #666;
+  margin: 8px 0;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-container {
+    padding: 20px 15px;
+  }
+
+  .dog-card {
+    max-width: 100%;
+  }
+
+  .button-container {
+    padding: 0;
+  }
+}
+
+/* ============ ACCESSIBILITY & DEFAULTS ============ */
+
+button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.empty-state {
+  position: relative;
+}
+
+.empty-state p {
+  position: relative;
+  z-index: 1;
+}
+
+.empty-state .btn-primary {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .empty-state .btn-primary {
+    color: white;
+  }
+}
+
+/* ============ PRINT STYLES ============ */
+
+@media print {
+  .navbar {
+    display: none;
+  }
+  
+  body {
+    background: white;
+  }
+}
