@@ -144,11 +144,15 @@ npx create-react-app dogmatch-frontend
 cp App-HARDENED.jsx dogmatch-frontend/src/App.jsx
 cp App-HARDENED.css dogmatch-frontend/src/App.css
 
-# Navigate to frontend directory
-cd dogmatch-frontend
+
 ```
 
 ```bash
+# Navigate to frontend directory
+cd dogmatch-frontend
+
+# Install dependencies
+npm i
 
 # Start the development server
 npm start
