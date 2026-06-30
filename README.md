@@ -148,7 +148,7 @@ cp App-HARDENED.css dogmatch-frontend/src/App.css
 cd dogmatch-frontend
 ```
 
-``bash
+```bash
 
 # Start the development server
 npm start
