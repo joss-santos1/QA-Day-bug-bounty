@@ -137,6 +137,7 @@ Backend is available at: `http://localhost:5000`
 ### 3. Frontend Setup 
 ONLY RUN THIS IF YOU DONT HAVE THE FOLDER DOGMATCH-FRONTEND
 ```bash
+# ONLY RUN THIS IF YOU DONT HAVE THE FOLDER DOGMATCH-FRONTEND
 # Create a new React app (if you don't have one)
 npx create-react-app dogmatch-frontend
 
