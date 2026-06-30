@@ -449,6 +449,14 @@ const startServer = () => {
   });
 };
 
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    uptime: process.uptime(),
+    config: getPoolConfig()
+  });
+});
+
 startServer();
 
 module.exports = app;
