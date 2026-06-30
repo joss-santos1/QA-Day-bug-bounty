@@ -134,8 +134,8 @@ Server running on port 5000
 
 Backend is available at: `http://localhost:5000`
 
-### 3. Frontend Setup
-
+### 3. Frontend Setup 
+ONLY RUN THIS IF YOU DONT HAVE THE FOLDER DOGMATCH-FRONTEND
 ```bash
 # Create a new React app (if you don't have one)
 npx create-react-app dogmatch-frontend
@@ -146,6 +146,9 @@ cp App-HARDENED.css dogmatch-frontend/src/App.css
 
 # Navigate to frontend directory
 cd dogmatch-frontend
+```
+
+``bash
 
 # Start the development server
 npm start
